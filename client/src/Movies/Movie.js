@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const Movie = (props) => {
   const [movie, setMovie] = useState();
- 
+
   useEffect(() => {
     const id = 1;
     // change ^^^ that line and grab the id from the URL
@@ -32,6 +32,7 @@ const Movie = (props) => {
 
   const { title, director, metascore, stars } = movie;
   return (
+ 
     <div className="save-wrapper">
       <div className="movie-card">
         <h2>{title}</h2>
