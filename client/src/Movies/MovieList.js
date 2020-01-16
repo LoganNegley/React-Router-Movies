@@ -29,6 +29,7 @@ const MovieList = props => {
 }
 
 function MovieDetails({ movie }) {
+  console.log(movie)
   const { title, director, metascore, stars } = movie;
   return (
     <Link to='/movies/`${movie.id}`'>
