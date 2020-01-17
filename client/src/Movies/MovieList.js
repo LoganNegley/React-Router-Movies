@@ -33,7 +33,7 @@ function MovieDetails({ movie }) {
   console.log(movie)
   const { title, director, metascore, stars } = movie;
   return (
-    <NavLink to={`/movies/${movie.id}`}>
+    <Link to={`/movies/${movie.id}`}>
     {/* {console.log(movie)} */}
     <div className="movie-card">
       <h2>{title}</h2>
@@ -51,7 +51,7 @@ function MovieDetails({ movie }) {
         </div>
       ))}
     </div>
-    </NavLink>
+    </Link>
   );
 }
 
