@@ -2,7 +2,7 @@ import React from 'react';
 
 const MovieCard = props => {
   console.log(props)
-  const movieStars=props.stars
+
   return(
         <div className="save-wrapper">
       <div className="movie-card">
@@ -14,7 +14,6 @@ const MovieCard = props => {
           Metascore: <strong>{props.metascore}</strong>
         </div>
         <h3>Actors</h3>
-{console.log(props.stars)}
         {props.stars.map(star => (
           <div key={star} className="movie-star">
             {star}
